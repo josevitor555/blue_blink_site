@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+main #progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: #2B3467;
+    border-radius: 4px;
+}
+main header {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: #3E54AC;
+}
+main header .sub-header {
+    width: 100%;
+    height: 100px;
+    background: #F7EFE5;
+}
+main header .sub-header .logo {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main header .sub-header .logo span {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #191825;
+    cursor: pointer;
+}
+main header .sub-header .logo span::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -1px;
+    background: #3E54AC;
+}
+main header .vertical-containers {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+main header .vertical-containers .container {
+    position: relative;
+    width: 220px;
+    height: 100%;
+    background: #FFFBF5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main header .vertical-containers .local-perfil {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main header .vertical-containers .sub-container {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 60px;
+    transform: translateY(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main header .vertical-containers .sub-container input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: #00235B;
+}
+main header .vertical-containers .sub-container input[type="submit"]:hover {
+    background: #fff;
+    border: 2px solid #2B3467;
+    color: #000000;
+    font-weight: 600;
+}
+main header .vertical-containers .local-perfil .name-user {
+    margin: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+main header .vertical-containers .local-perfil .circle-perfil#angel_lord {
+    width: 90px;
+    height: 90px;
+    background: url("users-perfil/angel_lord.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main header .vertical-containers .local-perfil .circle-perfil#blood_lord {
+    width: 90px;
+    height: 90px;
+    background: url("users-perfil/blood_lord.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main header .vertical-containers .local-perfil .circle-perfil#deep_dead {
+    width: 90px;
+    height: 90px;
+    background: url("users-perfil/deep_dead.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main header .vertical-containers .local-perfil .circle-perfil#human_light {
+    width: 90px;
+    height: 90px;
+    background: url("users-perfil/human_light.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main header .vertical-containers .local-perfil .circle-perfil#lord_shadow {
+    width: 90px;
+    height: 90px;
+    background: url("users-perfil/lord_shadow.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main header .custom-shape-divider-top-1679331972 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+main header .custom-shape-divider-top-1679331972 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 70px;
+}
+main header .custom-shape-divider-top-1679331972 .shape-fill {
+    fill: #3E54AC;
+}
+main nav {
+    position: absolute;
+    top: 390px;
+    left: 0;
+    height: 100%;
+    width: 90px;
+    background: #4B56D2;
+    overflow: hidden;
+    transition: width .2s ease;
+}
+main nav:hover {
+    width: 280px;
+    transition: all .3s ease;
+}
+main nav .logo {
+    text-align: center;
+    display: flex;
+    transition: all .3s ease;
+    margin: 10px 0 0 10px;
+}
+main nav .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+main nav .logo span {
+    font-weight: bolder;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+main nav a {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: table;
+    width: 300px;
+    padding: 18px;
+}
+main nav a:hover {
+    background: rgba(255, 255, 255, .1);   
+}
+main nav .fa-solid {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+main nav .log_out {
+    position: absolute;
+    bottom: 0;
+}
+main nav .nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+body {
+    position: relative;
+    height: 300vh;
+    background-color: #FCFFE7;
+}
